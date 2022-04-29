@@ -147,10 +147,10 @@ function Home() {
             <div className="footer">
                 <Link to={`/profile/${value.UserId}`}>
                 
-                  Créé par <div className="pseudo"> {value.username}   </div>
-                  <span className="date" > {value.createdAt.toString().replace(/T/g, ' à ').slice(0, 21)}</span>
+                  Créé par  {value.username}   <br></br>
+                   {value.createdAt.toString().replace(/T/g, '  ').slice(0, 20)}
                 </Link>
-          
+          <div className="ThumbUpAltIcon">
                 <ThumbUpAltIcon
                   onClick={() => {
                     likeAPost(value.id);
@@ -161,7 +161,7 @@ function Home() {
                 />
                 <label className="white"> {value.Likes.length}</label>
            
-            </div>  </div> 
+            </div>  </div> </div> 
          
         );
       })}

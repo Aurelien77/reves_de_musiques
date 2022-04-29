@@ -22,6 +22,28 @@ text-align: center;
     }
   }
 
+  @mixin smartphone-ajustement_login {
+    @media only screen and (max-width: $smartphone) {
+
+   width: 60%;
+   height: 30%;
+
+
+ 
+    }
+  }
+
+
+  @mixin smartphone-ajustement_formulaire {
+    @media only screen and (max-width: $smartphone) {
+
+ font-size: 1rem;
+
+
+ 
+    }
+  }
+
 
 
   @mixin smartphone-grid-body {

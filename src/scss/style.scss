@@ -18,10 +18,13 @@ justify-items: center;
   width: 100%;
   height: 100%;
 & img {
+
+@include  smartphone-ajustement_login;
   margin-top: 3%;
 border-radius: 20%;
 box-shadow: 2px 2px 4px rgb(223, 217, 217);
-
+width: 30%;
+height: 40%;
 }
 
 & .presentationtitre {
@@ -33,6 +36,7 @@ margin-top: 9%;
 }
 
 & .presentation {
+
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 1%;
@@ -44,14 +48,24 @@ margin-top: 9%;
 
 
   & .transparent{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     opacity: 1;
     color: #0a0a0a;
     font-size: 1.5rem;
     margin: 2%;
+    border-radius: 20%;
     /* box-shadow: 1px 1px 2px rgb(163, 158, 158); */
+    & a {
+
+font-weight: 500;
+      color: #2069dd;
+    }
   }
   & .arriereplanpres {
+    display: flex;
+    flex-direction: column;
    /*  background: no-repeat, url(../logos/partition.jpg); */
   background-color: #f7fdfd;
   padding: 1%;
@@ -503,6 +517,7 @@ text-align: center;
   box-shadow: rgba(15, 15, 12, 2) 0px 2px 8px 0px;
   border-radius: 15px;
   background-color: white;
+  margin-bottom: 4%;
  /*   background-image: url(../logos/icon.svg); */
 & .title {
   width: 100%;
@@ -599,14 +614,22 @@ text-align: center;
 
   padding: 1%;
   align-items: center;
-  padding-left: 15px;
+
   background-color: #122441;
   color: white;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-}
+  & .ThumbUpAltIcon{
+
+display: flex;
+flex-direction: row;
+
+  }
 }
 
+
+
+}
 
 
 .post:hover {
@@ -879,7 +902,6 @@ background-color: #d1515a;
   background-size: cover;
   background: repeat, url(../logos/orig.gif);
 
-  
 }
 
 .spanform {
@@ -989,6 +1011,21 @@ border-radius: 20%;
 
 
 & .formContainer {
+
+@include smartphone-ajustement_formulaire;
+
+
+& .POSTPRIVE span {
+color: #0d11e9;
+font-weight: 800;
+}
+
+& .POSTPUBLIC span {
+
+  color: #0de918;
+  font-weight: 800;
+}
+
 
 font-weight: 700;
 &.titre {
