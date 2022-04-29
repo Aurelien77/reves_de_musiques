@@ -1,0 +1,163 @@
+@mixin smartphone-grid {
+    @media only screen and (max-width: $smartphone) {
+
+    
+      width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 3%;
+  /* color: black; */
+  border: 1px solid #d1515a;
+  font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+  box-shadow: rgba(15, 15, 12, 2) 0px 2px 8px 0px;
+  border-radius: 15px;
+  background-color: white;
+
+ 
+    }
+  }
+
+
+
+  @mixin smartphone-grid-body {
+    @media only screen and (max-width: $smartphone) {
+
+    
+      width: 100%;
+   height: 50%; 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 60px;
+  margin-left: 0%;
+  margin-right: 0%;
+  
+  font-weight: 500;
+  background-color: #a9a2eb;
+  color: black;
+  white-space: pre-line;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: center;
+  align-content: center;
+
+
+
+ 
+    }
+  }
+
+
+
+
+  @mixin smartphone-button {
+    @media only screen and (max-width: $smartphone) {
+font-size: 12px;
+ 
+    }
+  }
+
+
+
+
+  @mixin smartphone-nav {
+    @media only screen and (max-width: $smartphone) {
+      display: flex;
+      flex-direction: column;
+ padding: 0px;
+/*     background-color: #d1515a; */
+& .barredenavigation {
+  
+ 
+     & ul {
+      display: flex;
+  /*    border: 3px solid red; */
+ justify-content: center;
+ justify-items: center;
+ flex-direction: column;
+ 
+       padding: 0px;
+ 
+       
+     }
+ 
+     
+     
+
+ 
+ & .apparitionbarrecontexte {
+ 
+  
+ 
+ 
+ 
+ & ul {
+   display: flex;
+ /*  border: 3px solid red; */
+ justify-content: center;
+ justify-items: center;
+    flex-direction: column; 
+    width: 100%;
+   
+   
+
+  }
+ 
+ 
+
+    
+   
+ 
+
+ 
+ }
+ 
+ 
+ 
+   } }
+ 
+ 
+ 
+ 
+ 
+
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+  @mixin ipad-grid {
+    @media only screen  and (min-width: $ipadmin) and (max-width: $ipadmax)  {
+      width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0.5%;
+  /* color: black; */
+  border: 1px solid #d1515a;
+  font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+  box-shadow: rgba(15, 15, 12, 2) 0px 2px 8px 0px;
+  border-radius: 15px;
+  background-color: white;
+ 
+    }
+  }
+  
+  
