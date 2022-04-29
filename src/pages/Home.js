@@ -126,7 +126,7 @@ function Home() {
                height="50%"
                width="50%" 
                   src={value.lien}
-              
+                  allowfullscreen ="true"
                  
                 ></iframe>
               

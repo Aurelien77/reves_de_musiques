@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import image from "../logos/joueur.gif";
 import Nav from "./Nav";
 import Article from "./Article";
-
+import ReactPlayer from 'react-player'
 import { AuthContext } from "../helpers/AuthContext";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -55,7 +55,11 @@ function Acuueil() {
        </div>
                   
 <br></br>
-                  <div className="">Les trois derniers articles</div> 
+                  <div className="">Les trois derniers articles
+
+        
+                
+                  </div> 
         
                   </div>
           <Switch>
