@@ -588,7 +588,7 @@ h1 {
   display: flex;
   flex-direction: row;
 }
-.containerpost .likeBttn {
+.containerpost .unlikeBttn {
   color: #9ca59c;
   opacity: 0.6;
 }
