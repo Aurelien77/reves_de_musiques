@@ -134,7 +134,7 @@ function Postpriv() {
                 <div className="textfooter">
             
 
-             {value.createdAt.replace('T', ' / ').slice(0, 21)}
+            Le {value.createdAt.replace('T', ' à ').slice(0, 21)}
               
                 </div>
 

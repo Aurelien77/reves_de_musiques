@@ -142,8 +142,8 @@ function Home() {
             <div className="footer">
                 <Link to={`/profile/${value.UserId}`}>
                 <span >
-                  Créé par  {value.username}  </span> <br></br>
-                   {value.createdAt.toString().replace(/T/g, '  ').slice(0, 20)}
+                  Créé par  {value.username}</span> <br></br> <span className="date">
+                   {value.createdAt.toString().replace(/T/g, '  ').slice(0, 20)} </span> 
                 </Link>
           <div className="ThumbUpAltIcon">
                 <ThumbUpAltIcon
