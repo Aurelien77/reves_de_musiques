@@ -100,7 +100,9 @@ function Postpriv() {
           return (
       
             <div key={key} className="post3">
-              <div className="title"> {value.title} </div>
+              <div className="title"onClick={() => {
+                  history.push(`/postsecondaire/${value.id}`);
+                }}> {value.title} </div>
               <div
                 className="body"
                 onClick={() => {
