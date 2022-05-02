@@ -53,7 +53,7 @@ function CreatePost() {
           <label>Title: </label>
           <ErrorMessage name="title" component="span" />
           <Field
-            autocomplete="off"
+            autoComplete="off"
             id="inputCreatePost"
             name="title"
             placeholder="(Ex. Title...)"
@@ -64,7 +64,7 @@ function CreatePost() {
             cols="45"
             rows="4"
             component="textarea"
-            autocomplete="off"
+            autoComplete="off"
             id="postText"
             name="postText"
             placeholder="(Ex. Post...)"
@@ -73,7 +73,7 @@ function CreatePost() {
           <label>Noter ici votre lien: </label>
           <ErrorMessage name="lien" component="span" />
           <Field
-            autocomplete="off"
+            autoComplete="off"
             id="lien"
             name="lien"
             placeholder="(Ex. htpp://monlien.com...)"

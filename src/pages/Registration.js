@@ -41,7 +41,7 @@ function Registration() {
           <label>Username: </label>
           <ErrorMessage className="spanform" name="username" component="span" />
           <Field
-            autocomplete="off"
+            autoComplete="off"
             id="username"
             className="a"
             name="username"
@@ -50,7 +50,7 @@ function Registration() {
           <label>Password: </label>
           <ErrorMessage className="" name="password" component="span" />
           <Field
-            autocomplete="off"
+            autoComplete="off"
             type="password"
             id="password"
             className="b"
@@ -60,7 +60,7 @@ function Registration() {
           <label>email: </label>
           <ErrorMessage className="" name="email" component="span" />
           <Field
-            autocomplete="off"
+            autoComplete="off"
             id="email"
             className="c"
             name="email"

@@ -94,7 +94,10 @@ function Post2() {
 
   const editPost = (option) => {
     if (option === "title") {
-      let newTitle = prompt("Entrer un nouveau titre:");
+      let newTitle = prompt("Entrer un nouveau titre:", "Mon nouveau titre ");
+      if (newTitle  === null) {
+        return;
+    }
       axios.put(
         "https://reves-de-musiques.herokuapp.com/postspriv/title",
         {
@@ -108,7 +111,10 @@ function Post2() {
 
       setPostObject({ ...postObject, title: newTitle });
     } else {
-      let newPostText = prompt("Entrer un nouveau texte:");
+      let newPostText = prompt("Entrer un nouveau texte:", "Mon nouveau texte " );
+      if (newPostText  === null) {
+        return;
+    }
       axios.put(
         "https://reves-de-musiques.herokuapp.com/postspriv/postText",
         {

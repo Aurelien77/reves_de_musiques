@@ -44,6 +44,31 @@ text-align: center;
     }
   }
 
+  @mixin smartphone-ajustement_post_individuel_corps{
+    @media only screen and (max-width: $smartphone) {
+padding: 5%;
+ width: 100%;
+
+ & .body {
+
+  display: flex;
+  flex-direction: column;
+
+/*  height: 19vw; */
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  font-weight: 500;
+  background-color: #f7fdfd;
+  color: black;
+  white-space: pre-line;
+
+}
+ 
+    }
+  }
+
+
 
 
   @mixin smartphone-grid-body {

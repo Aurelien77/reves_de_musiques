@@ -37,8 +37,8 @@ function Postpriv() {
       <div className="profil">
         <img
          
-          src={"hhttps://reves-de-musiques.herokuapp.com/images/" + photo_profil}
-          alt="phot_profil"
+          src={"https://reves-de-musiques.herokuapp.com/images/" + photo_profil}
+          alt="photo_profil"
         />
       </div>
     

@@ -80,13 +80,6 @@ function Home() {
   };
  
 
-  const d1 = new Date();
-
-  if (typeof d1 === 'object' && d1 !== null && 'toLocaleDateString' in d1) {
-    const result = d1.toLocaleDateString('fr-FR');
-    console.log(result); // 👉️ 12/16/...
-  }
-  
 
 
 
@@ -107,7 +100,9 @@ function Home() {
 
 
            
-            <div className="title"> {value.title} </div>
+            <div className="title"   onClick={() => {
+                history.push(`/post/${value.id}`);
+              }}> {value.title} </div>
             <div
               className="body"
               onClick={() => {
@@ -146,8 +141,8 @@ function Home() {
 
             <div className="footer">
                 <Link to={`/profile/${value.UserId}`}>
-                
-                  Créé par  {value.username}   <br></br>
+                <span >
+                  Créé par  {value.username}  </span> <br></br>
                    {value.createdAt.toString().replace(/T/g, '  ').slice(0, 20)}
                 </Link>
           <div className="ThumbUpAltIcon">
