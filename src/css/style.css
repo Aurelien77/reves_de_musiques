@@ -12,7 +12,7 @@ a {
 }
 
 a:link {
-  color: white;
+  color: blue;
   text-decoration: none;
 }
 a:link a:visited {
