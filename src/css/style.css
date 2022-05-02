@@ -588,9 +588,16 @@ h1 {
   display: flex;
   flex-direction: row;
 }
-.containerpost .unlikeBttn {
-  color: #9ca59c;
+.containerpost .like {
   opacity: 0.6;
+  color: white;
+}
+.containerpost .delike {
+  color: white;
+  opacity: 1;
+}
+.containerpost .white {
+  color: white;
 }
 
 .post:hover {

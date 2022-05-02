@@ -627,14 +627,23 @@ flex-direction: row;
 
   }
 }
+& .like {
 
-& .unlikeBttn {
-color: #9ca59c;
-opacity: 0.6;
+  opacity: 0.6;
+  color: white;
+ 
+
+}
+& .delike {
+color: white;
+opacity: 1;
 
 }
 
+ & .white {
+  color: white;
 
+}
 }
 
 

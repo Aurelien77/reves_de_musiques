@@ -151,7 +151,7 @@ function Home() {
                     likeAPost(value.id);
                   }}
                   className={
-                    likedPosts.includes(value.id) ? "unlikeBttn" : "likeBttn"
+                    likedPosts.includes(value.id) ? "delike" : "like"
                   }
                 />
                 <label className="white"> {value.Likes.length}</label>
