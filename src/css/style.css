@@ -7,12 +7,17 @@ nav {
   justify-content: center;
 }
 
+a {
+  color: blue;
+}
+
 a:link {
   color: white;
   text-decoration: none;
 }
 a:link a:visited {
   text-decoration: none;
+  color: blue;
 }
 
 ul {
@@ -432,7 +437,7 @@ h1 {
   text-align: center;
 }
 .listepostsparutilisateur .post3 .atarget {
-  height: 10%;
+  height: 22px;
   align-items: center;
   align-content: center;
   font-size: 8px;
