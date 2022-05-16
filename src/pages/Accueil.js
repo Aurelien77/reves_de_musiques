@@ -46,7 +46,7 @@ function Acuueil() {
 
            
         Il vous permet de vous inscrire eet de noter des rêves ainsi que de disposer d'outils d'interpretations. <br></br>
-        Pour en savoir plus sur l'utilisation de ce site : <a href="mailto:aurelien.monceau@gmail.com">Contacter l'administrateur</a>
+         Voici un lien didacticiel pour vous faire la main : <a href="/"> LE DIDACTICIEL </a>
         
        
         

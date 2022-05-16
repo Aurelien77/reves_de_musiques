@@ -29,7 +29,7 @@ function Profile() {
       });
 
     axios
-      .get(`hhttps://reves-de-musiques.herokuapp.com/posts/byuserId/${id}`)   //Retourne la liste des post par UserID + Set la clée  ListOfPost avec la liste des posts 
+      .get(`https://reves-de-musiques.herokuapp.com/posts/byuserId/${id}`)   //Retourne la liste des post par UserID + Set la clée  ListOfPost avec la liste des posts 
       .then((response) => {
         setListOfPosts(response.data);
      

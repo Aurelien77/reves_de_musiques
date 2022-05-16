@@ -70,7 +70,7 @@ function Post() {
 
   const deleteComment = (id) => {
     axios
-      .delete(`https://reves-de-musiques.herokuapp.com/comments/${id}`, {
+      .delete(`hhttps://reves-de-musiques.herokuapp.com/comments/${id}`, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then(() => {
