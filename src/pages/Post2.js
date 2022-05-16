@@ -168,7 +168,7 @@ function Post2() {
           </div>
 
           <div className="footer">
-            {postObject.username}  le  {postObject.createdAt}
+            {postObject.username}  le  {postObject.createdAt}   {/*  {postObject.createdAt.replace('T', ' à ').slice(0, 21)} */}
 
             {(authState.username === postObject.username ||
               authState.admin === true) && (

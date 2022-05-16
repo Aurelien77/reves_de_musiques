@@ -13,7 +13,7 @@ function Delete() {
 
   const { authState } = useContext(AuthContext);
 
-  useEffect((id) => {
+  useEffect(() => {
     axios
       .delete(`https://reves-de-musiques.herokuapp.com/delete/${authState.id}`)
 

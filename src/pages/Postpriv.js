@@ -121,7 +121,7 @@ function Postpriv() {
                width="100%" 
                   src={value.lien}
                 
-                  allowfullscreen ="true"
+                  allowFullScreen ="true"
                 ></iframe>
               
 </div>

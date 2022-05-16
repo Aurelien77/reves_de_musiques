@@ -115,13 +115,13 @@ function Home() {
             <div className="iframdiv">
             <iframe  className="lien"
              loading="lazy"
-               scrolling="no"
+               scrolling="yes"
                frameBorder="10"
                overflow="hidden"
                height="50%"
                width="50%" 
                   src={value.lien}
-                  allowfullscreen ="true"
+                  allowFullScreen ="true"
                  
                 ></iframe>
               

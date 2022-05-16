@@ -139,7 +139,7 @@ function Profile() {
                     height="200"
                     src={value.lien}
                     frameborder="0"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
 
                   {/*  <iframe src={value.lien}></iframe> */}

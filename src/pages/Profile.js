@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../helpers/AuthContext";
-import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
+/* import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt"; */
 /* import LocalCafeIcon from "@material-ui/icons//LocalCafe"; */
 
 function Profile() {
@@ -12,7 +12,7 @@ function Profile() {
   const [username, setUsername] = useState("");      //Set authState avec la réponse de basicinfo + Username
   const [photo_profil, setphoto_profil] = useState("");  //Set authState avec la réponse de basicinfo + Photo
   const [listOfPosts, setListOfPosts] = useState([]);
-  const { authState } = useContext(AuthContext);
+
 
   useEffect(() => {
 
@@ -78,8 +78,13 @@ function Profile() {
         {listOfPosts.map((value, key) => {
           return (
       
-            <div key={key} className="post3">
+            <div key={key} className="post3" onClick={() => {
+              history.push(`/post/${value.id}`);
+            }}>
               <div className="title"> {value.title} </div>
+
+
+
               <div
                 className="body"
                 onClick={() => {
@@ -98,7 +103,7 @@ function Profile() {
                
                   src={value.lien}
                 
-                  allowfullscreen ="true"
+                  allowFullScreen ="true"
                 ></iframe>
               
 </div>

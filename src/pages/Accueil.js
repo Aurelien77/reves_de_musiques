@@ -1,12 +1,12 @@
 
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import image from "../logos/joueur.gif";
-import Nav from "./Nav";
-import Article from "./Article";
-import ReactPlayer from 'react-player'
+
+
+
 import { AuthContext } from "../helpers/AuthContext";
 import { useState, useEffect } from "react";
-import axios from "axios";
+
 import Login from "./Login";
 import Registration from "./Registration";
 
@@ -23,10 +23,7 @@ function Acuueil() {
   useEffect(() => {
    }, []);
 
-  const logout = () => {
-    localStorage.removeItem("accessToken");
-    setAuthState({ email: "", username: "", prof: "", id: 0, status: false });
-  };
+
 
   return (
     <>
@@ -46,8 +43,7 @@ function Acuueil() {
 
            
         Il vous permet de vous inscrire en tant que professeur afin de publier des posts autour des cours de musiques et aux élèves de publier leur évolution en vidéo puis de pouvoir être corrigés. <br></br>
-         Voici un lien didacticiel pour vous faire la main sur ce site : <a href="/"> LE DIDACTICIEL </a>
-        
+         Pour en savoir plus sur l'utilisation de ce site : <a href="mailto:aurelien.monceau@gmail.com">Contacter l'administrateur</a>
        
         
         </span>
