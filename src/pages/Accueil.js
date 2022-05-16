@@ -1,12 +1,12 @@
 
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import image from "../logos/joueur.gif";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import image from "../logos/favicon.jpg";
+import Nav from "./Nav";
 
-
-
+import ReactPlayer from 'react-player'
 import { AuthContext } from "../helpers/AuthContext";
 import { useState, useEffect } from "react";
-
+import axios from "axios";
 import Login from "./Login";
 import Registration from "./Registration";
 
@@ -23,7 +23,10 @@ function Acuueil() {
   useEffect(() => {
    }, []);
 
-
+  const logout = () => {
+    localStorage.removeItem("accessToken");
+    setAuthState({ email: "", username: "", prof: "", id: 0, status: false });
+  };
 
   return (
     <>
@@ -39,11 +42,12 @@ function Acuueil() {
                    <div className="presentationtitre">Bienvenue  </div> <br></br>
                   <div className="presentation">  <div className="arriereplanpres">   <span className="transparent">
                     Bonjour à tous,  😊<br></br> 
-                    Ce site à pour vocation d'aider pour l'apprentissage du piano  🎹 <br></br> 
+                    Ce site à pour vocation de parler des sujet de l'interpretation des rêves  🎹 <br></br> 
 
            
-        Il vous permet de vous inscrire en tant que professeur afin de publier des posts autour des cours de musiques et aux élèves de publier leur évolution en vidéo puis de pouvoir être corrigés. <br></br>
-         Pour en savoir plus sur l'utilisation de ce site : <a href="mailto:aurelien.monceau@gmail.com">Contacter l'administrateur</a>
+        Il vous permet de vous inscrire eet de noter des rêves ainsi que de disposer d'outils d'interpretations. <br></br>
+        Pour en savoir plus sur l'utilisation de ce site : <a href="mailto:aurelien.monceau@gmail.com">Contacter l'administrateur</a>
+        
        
         
         </span>
@@ -51,7 +55,7 @@ function Acuueil() {
        </div>
                   
 <br></br>
-                  <div className="">Les trois derniers articles
+                  <div className="">Les trois derniers s
 
         
                 

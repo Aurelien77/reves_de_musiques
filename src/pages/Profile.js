@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../helpers/AuthContext";
-/* import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt"; */
+import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 /* import LocalCafeIcon from "@material-ui/icons//LocalCafe"; */
 
 function Profile() {
@@ -12,7 +12,7 @@ function Profile() {
   const [username, setUsername] = useState("");      //Set authState avec la réponse de basicinfo + Username
   const [photo_profil, setphoto_profil] = useState("");  //Set authState avec la réponse de basicinfo + Photo
   const [listOfPosts, setListOfPosts] = useState([]);
-
+  const { authState } = useContext(AuthContext);
 
   useEffect(() => {
 
@@ -29,7 +29,7 @@ function Profile() {
       });
 
     axios
-      .get(`https://reves-de-musiques.herokuapp.com/posts/byuserId/${id}`)   //Retourne la liste des post par UserID + Set la clée  ListOfPost avec la liste des posts 
+      .get(`hhttps://reves-de-musiques.herokuapp.com/posts/byuserId/${id}`)   //Retourne la liste des post par UserID + Set la clée  ListOfPost avec la liste des posts 
       .then((response) => {
         setListOfPosts(response.data);
      
@@ -78,13 +78,8 @@ function Profile() {
         {listOfPosts.map((value, key) => {
           return (
       
-            <div key={key} className="post3" onClick={() => {
-              history.push(`/post/${value.id}`);
-            }}>
+            <div key={key} className="post3">
               <div className="title"> {value.title} </div>
-
-
-
               <div
                 className="body"
                 onClick={() => {
@@ -103,7 +98,7 @@ function Profile() {
                
                   src={value.lien}
                 
-                  allowFullScreen ="true"
+                  allowfullscreen ="true"
                 ></iframe>
               
 </div>

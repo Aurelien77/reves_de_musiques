@@ -2,7 +2,8 @@ import React, { useState, useContext } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { AuthContext } from "../helpers/AuthContext";
-import logo from "../logos/joueur.gif";
+
+import logo from "../logos/favicon.jpg";
 function Login() {
   const [username, setUsername] = useState("");
   /* const [email, setemail] = useState(""); */

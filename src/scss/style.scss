@@ -22,9 +22,9 @@ justify-items: center;
 @include  smartphone-ajustement_login;
   margin-top: 3%;
 border-radius: 20%;
-box-shadow: 2px 2px 4px rgb(223, 217, 217);
-width: 30%;
-height: 40%;
+
+width: 20%;
+height: 35%;
 }
 
 & .presentationtitre {
@@ -1121,8 +1121,11 @@ span {
   background: no-repeat, url(../logos/nuit.jpg);
 
   width: 100%;
+
+  
 }
 .loginContainer {
+  
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1145,9 +1148,9 @@ span {
 border-radius: 20%;
 margin-top: 5%;
 margin-bottom: 5%;
-width: 50%;
-height: 50%;
-box-shadow: 0.5px 0.5px 0.5px rgb(223, 217, 217);
+width: 30%;
+height: 45%;
+
 
   }
 
