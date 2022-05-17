@@ -28,13 +28,13 @@ function Post2() {
 
   useEffect(() => {
     axios
-      .get(`https://reves-de-musiques.herokuapp.com/postspriv/byId2/${id}`)
+      .get(`http://localhost:3001/postspriv/byId2/${id}`)
       .then((response) => {
         setPostObject(response.data);           /*  Set l'authState avec un post choisit par ID */
       });
 
     axios
-      .get(`https://reves-de-musiques.herokuapp.com/comments2/${id}`)
+      .get(`http://localhost:3001/comments2/${id}`)
       .then((response) => {
         setComments(response.data);
       });
@@ -43,10 +43,10 @@ function Post2() {
   const addComment = () => {
     axios
       .post(
-        "https://reves-de-musiques.herokuapp.com/comments2",
+        "http://localhost:3001/comments2",
         {
           commentBody: newComment,
-          PostId: id,
+          Posts2Id: id,
         },
         {
           headers: {
@@ -70,7 +70,7 @@ function Post2() {
 
   const deleteComment = (id) => {
     axios
-      .delete(`https://reves-de-musiques.herokuapp.com/comments2/${id}`, {
+      .delete(`http://localhost:3001/comments2/${id}`, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then(() => {
@@ -84,7 +84,7 @@ function Post2() {
 
   const deletePost = (id) => {
     axios
-      .delete(`https://reves-de-musiques.herokuapp.com/postspriv/${id}`, {
+      .delete(`http://localhost:3001/postspriv/${id}`, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then(() => {
@@ -99,7 +99,7 @@ function Post2() {
         return;
     }
       axios.put(
-        "https://reves-de-musiques.herokuapp.com/postspriv/title",
+        "http://localhost:3001/postspriv/title",
         {
           newTitle: newTitle,
           id: id,
@@ -116,7 +116,7 @@ function Post2() {
         return;
     }
       axios.put(
-        "https://reves-de-musiques.herokuapp.com/postspriv/postText",
+        "http://localhost:3001/postspriv/postText",
         {
           newText: newPostText,
           id: id,
@@ -168,7 +168,7 @@ function Post2() {
           </div>
 
           <div className="footer">
-            {postObject.username}  le  {postObject.createdAt}    {/*  {postObject.createdAt.replace('T', ' à ').slice(0, 21)} */}
+            {postObject.username}  le  {postObject.createdAt}
 
             {(authState.username === postObject.username ||
               authState.admin === true) && (
