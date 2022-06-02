@@ -51,13 +51,14 @@ h1 {
   text-align: center;
   background: no-repeat, url(../logos/nuit.jpg);
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 20%;
 }
 .accueil img {
   margin-top: 3%;
   border-radius: 20%;
-  width: 20%;
-  height: 35%;
+  width: auto;
+  height: auto;
 }
 @media only screen and (max-width: 700px) {
   .accueil img {
@@ -69,7 +70,7 @@ h1 {
   color: white;
   font-weight: 600;
   font-size: 2rem;
-  margin-top: 3%;
+  margin-top: 0%;
 }
 .accueil .presentation {
   padding-left: 10%;
@@ -945,19 +946,40 @@ span {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 40%;
-  height: 100%;
+  width: 30%;
+  height: auto;
   text-align: center;
   margin-top: 2%;
-  border-radius: 80px;
+  border-radius: 40%;
   margin-bottom: 20%;
   background-size: 100%;
   background-size: cover;
-  background: no-repeat, url(../logos/lune.gif);
+  /*  background: no-repeat, url(../logos/lune.gif);  */
+  background-color: black;
+  background: rgba(0, 0, 0, 0.7);
   /*  background: no-repeat, url(./logos/orig.gif); */
   box-shadow: 1px 1px silver, -0.5em 0 0.4em black;
   color: white;
   font-size: 150%;
+}
+@media only screen and (max-width: 700px) {
+  .loginContainer {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .loginContainer {
+    width: 35%;
+    height: 50%;
+  }
+  .loginContainer input {
+    height: 5%;
+  }
+}
+@media only screen and (max-width: 1001px) {
+  .loginContainer {
+    width: 90%;
+  }
 }
 .loginContainer img {
   border-radius: 20%;

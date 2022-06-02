@@ -22,6 +22,43 @@ text-align: center;
     }
   }
 
+    // ajust le formulaire login pour écran larges 
+    @mixin ajust-login-ecran-ipad {
+      @media only screen and (max-width: $ipadmin)  {
+        width: 90%;
+    
+        }
+        
+    
+    
+      }
+
+    @mixin ajust-login-ecran-large {
+      @media only screen and (min-width: $ecranlarge)  {
+    
+        width: 35%;
+        height: 50%;
+     & input {
+  
+      
+      height: 5%;
+  
+     }
+        }
+        
+    
+    
+      } 
+  @mixin ajust-login-ecran-smartphone {
+    @media only screen and (max-width: $smartphone)   {
+      width: 90%;
+  
+      }
+      
+  
+  
+    } 
+  
   @mixin smartphone-ajustement_login {
     @media only screen and (max-width: $smartphone) {
 

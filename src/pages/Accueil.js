@@ -42,11 +42,11 @@ function Acuueil() {
                    <div className="presentationtitre">Bienvenue  </div> <br></br>
                   <div className="presentation">  <div className="arriereplanpres">   <span className="transparent">
                     Bonjour à tous,  😊<br></br> 
-                    Ce site à pour vocation de parler des sujet de l'interpretation des rêves  🎹 <br></br> 
+                    Ce site à pour vocation de permetre l'apprentissage du piano en ligne 🎹 <br></br> 
 
            
-        Il vous permet de vous inscrire eet de noter des rêves ainsi que de disposer d'outils d'interpretations. <br></br>
-         Voici un lien didacticiel pour vous faire la main : <a href="/"> LE DIDACTICIEL </a>
+        Il vous permet de vous inscrire auprès d'un professeur et de disposer d'outils pour l'apprentissage. <br></br>
+        Pour en savoir plus sur son utilisation : <a href="mailto:aurelien.monceau@gmail.com">Contacter l'administrateur</a>
         
        
         
