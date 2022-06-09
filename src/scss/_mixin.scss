@@ -71,6 +71,78 @@ text-align: center;
   }
 
 
+
+
+
+
+
+
+
+
+
+
+
+  @mixin ipad-ajustement_login_img {
+     @media only screen and (max-width:$ipadmin  )   {
+
+
+
+
+  width: auto;
+  height: 20%;
+
+ 
+    }
+  }
+  
+  @mixin ipad-ajustement_login_text {
+    @media only screen and (max-width:$ipadmin  )   {
+
+
+
+
+font-size: 1.2vw;
+
+
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   @mixin smartphone-ajustement_formulaire {
     @media only screen and (max-width: $smartphone) {
 

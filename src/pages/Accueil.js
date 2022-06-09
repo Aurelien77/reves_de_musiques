@@ -55,11 +55,11 @@ function Acuueil() {
        </div>
                   
 <br></br>
-                  <div className="">Les trois derniers s
+                 {/*  <div className="">Les trois derniers s
 
         
                 
-                  </div> 
+                  </div> */} 
         
                   </div>
           <Switch>
