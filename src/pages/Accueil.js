@@ -1,6 +1,6 @@
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import image from "../logos/favicon.jpg";
+import image from "../logos/joueur.gif";
 import Nav from "./Nav";
 
 import ReactPlayer from 'react-player'
