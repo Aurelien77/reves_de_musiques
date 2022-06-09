@@ -52,6 +52,7 @@ height: 30%;
 
   & .transparent{
     @include  ipad-ajustement_login_text;
+    @include smartphone-ajustement_login_text;
     display: flex;
     flex-direction: column;
     background-color: white;
