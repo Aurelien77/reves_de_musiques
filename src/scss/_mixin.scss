@@ -1,3 +1,31 @@
+
+
+@mixin ipad-ajustement_menu_text {
+  @media only screen and (max-width:$ipadmaxmenu  )  and (min-width:$ipadmax  )  {
+ 
+ 
+ 
+ 
+ font-size: 1.8vw;
+ 
+ 
+ }
+ }
+
+
+ @mixin ipad-ajustement_menu_text {
+  @media only screen and (max-width:$ipadmaxmenu  )  and (min-width:$ipadmax  )  {
+ 
+ 
+ 
+ 
+ font-size: 1.8vw;
+ 
+ 
+ }
+ }
+
+
 @mixin smartphone-grid {
     @media only screen and (max-width: $smartphone) {
 

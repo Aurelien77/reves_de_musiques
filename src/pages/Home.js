@@ -91,7 +91,7 @@ function Home() {
  
       {listOfPosts.map((value, key) => {
 
-       
+const date = new Date(value.createdAt);
         //Map argument de tableau
         return (
      
@@ -128,10 +128,10 @@ function Home() {
            
               
               </div>
-              <div className="atarget">
+        {/*       <div className="atarget">
               <a target="blank" href={value.lien}>
                 {value.lien}
-              </a> </div>
+              </a> </div> */}
             <div>
          
            </div> </div> 
@@ -143,7 +143,7 @@ function Home() {
                 <Link to={`/profile/${value.UserId}`}>
                 <span >
                   Créé par  {value.username}</span> <br></br> <span className="date">
-                   {value.createdAt.toString().replace(/T/g, '  ').slice(0, 20)} </span> 
+                  {new Intl.DateTimeFormat('local').format(date)} </span> 
                 </Link>
           <div className="ThumbUpAltIcon">
                 <ThumbUpAltIcon

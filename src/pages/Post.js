@@ -70,7 +70,7 @@ function Post() {
 
   const deleteComment = (id) => {
     axios
-      .delete(`hhttps://reves-de-musiques.herokuapp.com/comments/${id}`, {
+      .delete(`https://reves-de-musiques.herokuapp.com/comments/${id}`, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then(() => {
@@ -130,7 +130,7 @@ function Post() {
       setPostObject({ ...postObject, postText: newPostText });
     }
   };
-
+  
   return (
     <div className="indivi">
       
@@ -162,14 +162,15 @@ function Post() {
                 allow="autoplay; encrypted-media"
                 allowFullScreen
               />
-              <a target="blank" href={postObject.lien}>
+           {/*    <a target="blank" href={postObject.lien}>
                 {postObject.lien}
-              </a>
+              </a> */}
             </div>
           </div>
 
           <div className="footer">
-            {postObject.username}  le  {postObject.createdAt}
+            {postObject.username}  le  {new Intl.DateTimeFormat('local').format(postObject.createAt)}
+           
 
             {(authState.username === postObject.username ||
               authState.admin === true) && (

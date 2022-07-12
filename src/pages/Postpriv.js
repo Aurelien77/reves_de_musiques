@@ -97,6 +97,7 @@ function Postpriv() {
       
       <div className="listepostsparutilisateur">
         {listOfPosts.map((value, key) => {
+          const date = new Date(value.createdAt);
           return (
       
             <div key={key} className="post3">
@@ -125,16 +126,16 @@ function Postpriv() {
                 ></iframe>
               
 </div>
-         <div className="atarget">
+{/*          <div className="atarget">
 <a target="blank" href={value.lien}>
                   {value.lien}
                 </a>
-             </div>
+             </div> */}
               <div className="footer">
                 <div className="textfooter">
             
 
-            Le {value.createdAt.replace('T', ' à ').slice(0, 21)}
+            Le  {new Intl.DateTimeFormat('local').format(date)}
               
                 </div>
 

@@ -209,7 +209,7 @@ justify-items: center;
 
 & .apparitionbarrecontexte {
 
- 
+  @include ipad-ajustement_menu_text;
 
 
 display: flex;
@@ -264,7 +264,7 @@ color: #0d11e9;
 
 
  & #username{
-
+  @include ipad-ajustement_menu_text;
   -webkit-text-stroke: 0.5px rgb(163, 17, 221);
   font-size: 1.8rem;
   width: 100%;
@@ -550,7 +550,7 @@ text-align: center;
   width: 100%;
   height: 100%; 
 
-  text-align: justify;
+  /* text-align: justify; */
  
   margin-left: 0%;
   margin-right: 0%;
@@ -1088,8 +1088,8 @@ font-weight: 700;
   border-radius: 25px;
   background-color: white;
   font-size: 25px;
-  margin-top: 10%;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-size: cover;
  /*  background: no-repeat, url(../logos/icon.svg); */
 
